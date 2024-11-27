@@ -1,0 +1,140 @@
+<!-- procurement.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="NEEPCO-main\styles.css" />
+    <title>Verify Page</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="header">
+        <h1>Document Verification</h1>
+      </div>
+
+      <!-- Document Type Dropdown -->
+      <div class="dropdown">
+        <label for="document-type"><h3>Select Document Type:</h3></label>
+        <select id="document-type" onchange="handleDocumentTypeChange()">
+          <option value="">Select an option</option>
+          <option value="passport">Passport</option>
+          <option value="license">License</option>
+          <option value="certificate">Certificate</option>
+        </select>
+      </div>
+
+      <!-- File Upload -->
+      <div class="file-upload">
+        <label for="file-upload"><h3>Upload Document(max size 1MB):</h3></label>
+        <input type="file" id="file-upload" accept=".pdf, .doc, .docx" />
+      </div>
+
+      <!-- Document Type Dropdown -->
+      <div class="dropdown">
+        <label for="document-type"
+          ><h3>Select Type if applicable with certified docs:</h3></label
+        >
+        <select id="document-type" onchange="handleDocumentTypeChange()">
+          <option value="">Select an option</option>
+          <option value="scst">SC/ST Owned</option>
+          <option value="women">Women Owned</option>
+        </select>
+      </div>
+
+      <div class="file-upload">
+        <label for="file-upload"><h3>Upload Document(max size 1MB):</h3></label>
+        <input
+          type="file"
+          id="file-upload"
+          accept=".pdf, .doc, .docx"
+          onchange="validateFileSize()" />
+        <p id="file-size-info"></p>
+        <p id="file-size-error"></p>
+      </div>
+      <!-- Procurement Type Dropdown -->
+      <div class="dropdown" id="procurement-dropdown" style="display: none">
+        <label for="procurement-options"
+          ><h3>Select Procurement Type:</h3></label
+        >
+        <select
+          id="procurement-options"
+          onchange="handleProcurementTypeChange()">
+          <option value="">Select an option</option>
+          <option value="bidding">Bidding</option>
+          <option value="direct-purchase">Direct Purchase</option>
+          <option value="reverse-auction">Reverse Auction</option>
+        </select>
+      </div>
+
+      <div class="procurement-buttons">
+        <!-- Use data attributes to store URLs -->
+        <a href="https://gem.gov.in/">
+          <button class="button" data-url="bidding.html">Bidding</button></a
+        >
+        <button class="button" data-url="">Direct Purchase</button>
+        <a href="https://forwardauction.gem.gov.in/eprocure/home"
+          ><button class="button" data-url="reverse-auction.html">
+            Forward Auction
+          </button></a
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      function handleDocumentTypeChange() {
+        var documentType = document.getElementById("document-type").value;
+        var scstWomenDropdown = document.getElementById("scst-women-dropdown");
+        var procurementDropdown = document.getElementById(
+          "procurement-dropdown"
+        );
+
+        // Reset and hide other dropdowns
+        scstWomenDropdown.style.display = "none";
+        procurementDropdown.style.display = "none";
+
+        // Show and populate the next dropdown based on the selected document type
+        if (documentType === "certificate") {
+          scstWomenDropdown.style.display = "block";
+        } else if (documentType === "license") {
+          procurementDropdown.style.display = "block";
+        }
+      }
+
+      function handleSCSTWomenTypeChange() {
+        var scstWomenType = document.getElementById("scst-women-type").value;
+        var procurementDropdown = document.getElementById(
+          "procurement-dropdown"
+        );
+
+        // Reset and hide other dropdowns
+        procurementDropdown.style.display = "none";
+
+        // Show and populate the next dropdown based on the selected SC/ST or Women Owned type
+        if (scstWomenType === "scst") {
+          procurementDropdown.style.display = "block";
+        }
+      }
+
+      function handleProcurementTypeChange() {
+        var selectedOption = document.getElementById(
+          "procurement-options"
+        ).value;
+
+        // Perform any actions based on the selected procurement option
+        console.log("Selected Procurement Option:", selectedOption);
+
+        // For demonstration purposes, you can redirect to a URL based on the selected option
+        if (selectedOption) {
+          var redirectURL = selectedOption + ".html";
+          window.location.href = redirectURL;
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

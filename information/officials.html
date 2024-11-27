@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Table</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    select {
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>User Table</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email ID</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>john@example.com</td>
+          <td>
+            <select>
+              <option value="admin" selected>Admin</option>
+              <option value="buyer">Buyer</option>
+              <option value="payment_authority">Payment Authority</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jane Smith</td>
+          <td>jane@example.com</td>
+          <td>
+            <select>
+              <option value="admin">Admin</option>
+              <option value="buyer" selected>Buyer</option>
+              <option value="payment_authority">Payment Authority</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Bob Johnson</td>
+          <td>bob@example.com</td>
+          <td>
+            <select>
+              <option value="admin">Admin</option>
+              <option value="buyer">Buyer</option>
+              <option value="payment_authority" selected>Payment Authority</option>
+            </select>
+          </td>
+        </tr>
+        <!-- Add more entries as needed -->
+      </tbody>
+    </table>
+
+    <div class="button-container">
+        <a href="front.html">
+      <button type="button">Go Back</button></a>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrator Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .admin-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome, Administrator!</h1>
+  <button onclick="logout()">Logout</button>
+  <div class="admin-buttons">
+    <button class="button" onclick="redirectToBuyerPage()">Buyer Details</button>
+    <button class="button" onclick="redirectToVendorPage()">Vendor Details</button>
+    <button class="button" onclick="redirectToPaymentDetailsPage()">Payment Details</button>
+    <button class="button" onclick="redirectToReportsPage()">Reports</button>
+  </div>
+
+  <script>
+    function redirectToBuyerPage() {
+      window.location.href = 'buyerdetail.html'; // Replace with the actual path to your buyer HTML page
+    }
+
+    function redirectToVendorPage() {
+      window.location.href = 'vendorDetail.html'; // Replace with the actual path to your vendor HTML page
+    }
+
+    function redirectToPaymentDetailsPage() {
+      window.location.href = 'payment_details.html'; // Replace with the actual path to your payment details HTML page
+    }
+
+    function redirectToReportsPage() {
+      window.location.href = '.html'; // Replace with the actual path to your payment details HTML page
+    }
+  </script>
+
+</body>
+</html>

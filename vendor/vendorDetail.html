@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .accepted {
+      background-color: #a1eaa3; /* Light green background for accepted vendors */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Vendor Details</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Vendor ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Products</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>Vendor A</td>
+        <td>vendorA@example.com</td>
+        <td>456 Market Street, Cityville</td>
+        <td>Electronics, Clothing</td>
+        <td><button class="accept-button" onclick="acceptVendor(101, this)">Accept</button></td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Vendor B</td>
+        <td>vendorB@example.com</td>
+        <td>789 Commerce Avenue, Townsville</td>
+        <td>Home Goods, Appliances</td>
+        <td><button class="accept-button" onclick="acceptVendor(102, this)">Accept</button></td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Vendor C</td>
+        <td>vendorC@example.com</td>
+        <td>123 Business Lane, Villagetown</td>
+        <td>Furniture, Decor</td>
+        <td><button class="accept-button" onclick="acceptVendor(103)">Accept</button></td>
+      </tr>
+      <tr>
+        <td>104</td>
+        <td>Vendor D</td>
+        <td>vendorD@example.com</td>
+        <td>567 Retail Road, Hamletville</td>
+        <td>Books, Stationery</td>
+        <td><button class="accept-button" onclick="acceptVendor(104)">Accept</button></td>
+      </tr>
+      <tr>
+        <td>105</td>
+        <td>Vendor E</td>
+        <td>vendorE@example.com</td>
+        <td>890 Wholesale Way, Suburbia</td>
+        <td>Food, Beverages</td>
+        <td><button class="accept-button" onclick="acceptVendor(105)">Accept</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    function acceptVendor(vendorId) {
+      // Implement the logic to accept the vendor with the specified ID
+      console.log("Vendor ID " + vendorId + " has been accepted.");
+      // You can add more logic here, such as updating the database or displaying a confirmation message.
+    }
+  </script>
+
+</body>
+</html>

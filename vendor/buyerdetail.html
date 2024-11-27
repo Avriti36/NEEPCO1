@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buyer Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .buy-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .buy-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Buyer Details</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Buyer ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Order Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>john.doe@example.com</td>
+        <td>123 Main Street, Cityville</td>
+        <td>Rs 500</td>
+        <td><button class="buy-button" onclick="buyFromVendor(1)">Buy</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td>jane.smith@example.com</td>
+        <td>456 Oak Avenue, Townsville</td>
+        <td>Rs 700</td>
+        <td><button class="buy-button" onclick="buyFromVendor(2)">Buy</button></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Bob Johnson</td>
+        <td>bob.johnson@example.com</td>
+        <td>789 Pine Lane, Villagetown</td>
+        <td>Rs 300</td>
+        <td><button class="buy-button" onclick="buyFromVendor(3)">Buy</button></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Alice Williams</td>
+        <td>alice.williams@example.com</td>
+        <td>101 Cedar Road, Hamletville</td>
+        <td>Rs 900</td>
+        <td><button class="buy-button" onclick="buyFromVendor(4)">Buy</button></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Chris Davis</td>
+        <td>chris.davis@example.com</td>
+        <td>202 Elm Street, Suburbia</td>
+        <td>Rs 600</td>
+        <td><button class="buy-button" onclick="buyFromVendor(5)">Buy</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    function buyFromVendor(buyerId) {
+      // Implement the logic to buy from the vendor for the specified buyer
+      console.log("Buyer ID " + buyerId + " is buying from the vendor.");
+      // You can add more logic here, such as redirecting to a purchase page or displaying a confirmation message.
+    }
+  </script>
+
+</body>
+</html>
+

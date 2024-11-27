@@ -1,0 +1,7 @@
+Transaction ID	Transaction Amount	Quantity	Unit Price	Total Cost	Product Name	Buyer Name	Buyer Contact	Seller Name	Seller Contact	Payment Method	Invoice Method
+TID001	RS10,000	100	RS100	RS10,000	coal		ABC Company	John Doe	XYZ Corp	Jane Smith	Credit Card	Invoice
+TID002	RS15,500	50	RS310	RS15,500	cement	XYZ Ltd	Sarah Johnson	ABC Supplies	Mark Anderson	Bank Transfer	Invoice
+TID003	RS5,200	80	RS65	RS5,200	pump	LMN Co.	David Brown	PQR Electric	Emily White	PayPal	E-invoice
+TID004	RS8,750	75	RS117	RS8,775	tubelight	EFG Inc.	Robert Green	HIJ Energy	Susan Black	Check	Paper Invoice
+TID001	RS10,000	100	RS100	RS10,000	Capacitor	ABC Company	John Doe	XYZ Corp	Jane Smith	Credit Card	Invoice
+TID002	RS15,500	50	RS310	Rs15,500	Touch	XYZ Ltd	Sarah Johnson	ABC Supplies	Mark Anderson	Bank Transfer	Invoice

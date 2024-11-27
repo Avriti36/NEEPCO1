@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEEPCO</title>
+  </head>
+  <body>
+    <header>
+      <img src="NEEPCO-main\image\logo.png" alt="Government Logo" />
+    </header>
+
+    <nav>
+      <a href="about-us.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="https://neepco.co.in/contact-us">Contact</a>
+      <a href="">Feedback</a>
+      <a href="admin.html"
+        ><button class="login-btn" onclick="redirectToLogin()">
+          Log In
+        </button></a
+      >
+    </nav>
+    <p>
+      NEEPCO has been a trusted power generation company in the North Eastern
+      region of India and beyond since 1976, working closely with the Ministry
+      of Power and the north eastern states to act in their best interest in
+      tapping the enormous power potential of the region and the country.
+    </p>
+    We pride ourselves with:
+    <p>
+      operating the largest Hydro Power Plant in N.E. Region of India being the
+      only CPSU having Hydro and Thermal Power Stations in operation having
+      exposure to construction & operation of Hydro projects in highly difficult
+      and Geo-Technically sensitive terrain of N.E. Region.
+    </p>
+    <p>
+      Incorporated in 1976 to plan, investigate, design, construct, generate,
+      operate & maintain power stations in the North Eastern Region of India
+      under the Ministry of Power, Government of India, NEEPCO is conferred with
+      the Schedule A- Miniratna Category-I CPSE status and operates 6 hydro, 3
+      thermal and 1 solar power stations with a combined installed capacity of
+      2057 MW. NEEPCO commissioned its largest Hydro Project Kameng(600 MW) in
+      the N.E. Region, Commercial operation of Unit-I (150MW) was declared
+      w.e.f. 00:00 hours of 17.06.2020, Commercial operation of Unit-II (150 MW)
+      was declared w.e.f. 00:00 hours of 01.07.2020, Commercial operation of
+      Unit-III (150 MW) was declared w.e.f. 00:00 hrs of 22.01.2021 and Unit-IV
+      was declared w.e.f. 00:00 hrs of 12.02.2021.
+    </p>
+    <main>
+      <section id="services">
+        <div class="left-column">
+          <div id="service-info">
+            <p>Explore information about our power generation services:</p>
+
+            <div id="hydro" class="service-category">
+              <h3>Hydro Power</h3>
+              <ul>
+                <li>Kopili Hydro Power Station</li>
+                <li>Doyang Hydro Power Station</li>
+                <li>Tuirial Hydro Power Station</li>
+                <li>Kameng Hydro Power Station</li>
+                <li>Pare Hydro Power Station</li>
+              </ul>
+            </div>
+
+            <div id="solar" class="service-category">
+              <h3>Solar Power</h3>
+              <ul>
+                <li>Monarchak Solar Power Station</li>
+                <li>Solar Tracker Plant KHPS</li>
+              </ul>
+            </div>
+
+            <div id="thermal" class="service-category">
+              <h3>Thermal Power</h3>
+              <ul>
+                <li>Assam Gas Based Power Station</li>
+                <li>Agartala Gas Based Power Station</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <div id="feedback-form">
+        <!-- Your feedback form can be added here -->
+        <!-- For example: -->
+        <form action="submit_feedback.php" method="post">
+          <!-- Form fields go here -->
+          <label for="feedback-message">Your Feedback:</label>
+          <textarea
+            id="feedback-message"
+            name="feedback-message"
+            rows="4"
+            cols="50"></textarea>
+          <br />
+          <input type="submit" value="Submit Feedback" />
+        </form>
+      </div>
+    </section>
+
+    <footer>&copy; 2023 Government of [Your Region/Country]</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
